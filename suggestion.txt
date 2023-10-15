@@ -12,3 +12,7 @@ create a separe file and import it in the required component
 
 #3 => reusing types
 like importing one type to another type
+
+Type Inference
+Meaning to know the type based on things we typed
+
