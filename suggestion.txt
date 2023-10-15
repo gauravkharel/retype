@@ -1,0 +1,14 @@
+#1 => destructure the props while passing it in a component
+type InputProps ={
+    value: string
+    handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+}
+export const Input = ({value, handleChange}: InputProps) => {
+    return <input type='text' value={value} onChange={handleChange} />
+}
+
+#2 =>  when working on a big props export it to separte file
+create a separe file and import it in the required component
+
+#3 => reusing types
+like importing one type to another type
