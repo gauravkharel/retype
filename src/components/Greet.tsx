@@ -1,14 +1,17 @@
 type NameProps = {
     name: string
-    messageCount: number
+    //making messageCount optional
+    messageCount?: number
     isLoggedIn: boolean
 }
 
 function Greet(props: NameProps) {
+  //setting its value to 0
+  const {messageCount = 0} = props
   return (
     <div>
         {
-          props.isLoggedIn ? `welcome ${props.name}! you have ${props.messageCount} unread messages` : `welcome guests`
+          props.isLoggedIn ? `welcome ${props.name}! you have ${messageCount} unread messages` : `welcome guests`
         }
     </div>
   )
