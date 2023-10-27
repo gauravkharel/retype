@@ -1,4 +1,3 @@
-
 export const theme = {
     primary: {
         main: '#3f51b5',
