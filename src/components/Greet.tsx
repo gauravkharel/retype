@@ -4,7 +4,7 @@ type NameProps = {
     messageCount?: number
     isLoggedIn: boolean
 }
-
+//importing from here
 function Greet(props: NameProps) {
   //setting its value to 0
   const {messageCount = 0} = props
